@@ -1,0 +1,261 @@
+<!-- This is a HTML document where I wonna learn this -->
+<!DOCTYPE html> <!-- Indica la version de HTML, en este caso HTML5 -->
+<html lang="en">
+<head>
+    <!-- Los metadatos describen la pagina -->
+    <meta charset="UTF-8"> <!-- Los caracteres que se usan  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Importante para el responsive, para que se pueda ver en cualquier dispositivo -->
+    <meta name="description" content="This is my web description">
+    <meta name="keywords" content="learn, other keywords"> 
+        <title>My web page</title> <!-- Titulo de la página, algo que la describa -->
+</head>
+
+<body>
+    <h1>This is my new web page </h1>     
+           <!-- Headings -->
+    <!-- Solo se recomiendsa usar un h1 por página -->
+    <h2>Headings</h2>
+    <h2>Second</h2>
+    <h3>Third</h3>
+    <h4>Fourth</h4>
+
+                <!-- Parrafos -->
+                <h2>Parrafos</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo error molestiae deleniti consectetur<strong> asperiores magni placeat </strong>voluptate, dignissimos laudantium omnis laborum laboriosam non magnam vel quidem possimus rerum itaque?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. <hr><br> Eius, officiis, voluptate molestias quam, sint laborum ut placeat sit asperiores fuga necessitatibus adipisci exercitationem amet facere inventore debitis enim. Laudantium, quas? </p>
+        <!-- strong: lo pondrá en negritas
+                em: pone el texto en italicas
+                br:  pondrá el texto en otra linea 
+                hr: pone una linea horizontal
+        -- Todos estos cambios se deben hacer con CSS -- 
+        -->
+
+                <!-- Links -->
+            <!-- Externos -->
+            <h2>Links</h2>
+    <a href="http://google.com" target="_BLANK">Click For Google</a> <br>
+        <!-- href: es para las dierecciones
+             target="_BLANK": abre el link en otra ventana-->
+
+                <!--    Imagenes -->
+
+    <!-- Imagen local -->
+    <h2>Imagénes</h2>
+    <img src="gatito1.png" alt="Cat 1">
+    <!-- Imagen remota -->
+    <img src="https://images.theconversation.com/files/62378/original/czckpqfv-1413897634.jpeg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" alt="Cat 2" width="200px">
+
+
+    <iframe width="420" height="315"
+    src="https://youtube/YFervpMG_sM">
+    </iframe>
+                <!-- List & tables -->
+        <!-- En desorden -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+        <!-- En orden -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+        <!-- Con type se puede cambiar el tipo de lista, ya sea con numeros, letras, numeros romanos, etc -->
+    
+        <!-- Nested List -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ul>
+            <li>Nested Item 1</li>
+            <li>Nested Item 2</li>
+        </ul>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+                <!-- Tables -->
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Esteban </td>
+                <td> Alcantara </td>
+                <td> danideap1@gmail.com</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td> Ed </td>
+                <td> Sheeran </td>
+                <td> papidios@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+                <!-- Forms -->
+    <form action="process.php"> <!-- Para conectarlo con el backend -->
+        <!-- Text -->
+        <div><!-- divison -->
+            <label for="name">Name</label>
+            <input type="text" id = "name" name = "name" value="Esteban">
+        </div>
+        <!-- Para emails -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        </div>
+        <!-- Text Area -->
+        <div>
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" cols="50" rows="5" ></textarea>
+        </div>
+        <!-- Select between diferents options -->
+        <div>
+            <label for="sex">Sex</label>
+            <select name="sex" id="sex">
+                <option value="select">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label><br> 
+            <input type="number" name="age" id="age">
+        </div>
+        <!-- Date -->
+        <div>
+            <label for="birthdate">Birthdate</label><br>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        <!-- Seleccionar de circulo (Radio)-->
+        <div>
+            <label for="membership">Membership</label>
+            <input type="radio" name="membership" value="simple" id="membership">Simple
+            <input type="radio" name="membership" value="standart" id="membership">Standard
+            <input type="radio" name="membership" value="super" id="membership">Super
+        </div>
+        <!-- Checkbox -->
+        <div>
+            <label for="membership">I like ... </label>
+            <input type="checkbox" name="Likes" value="Bike" id="Likes">Bike
+            <input type="checkbox" name="Likes" value="Car" id="Likes">Car
+            <input type="checkbox" name="Likes" value="subway" id="Likes">Subway
+        </div>
+        <!-- Input Submit -->
+        <input type="submit" value="submit">
+        <!-- Button submit 
+        <button type="submit">Submit</button>
+        -->
+        <!-- Button reset -->
+        <button type="reset">Reset</button>
+    </form>
+
+    <!-- Inline vs Block elements -->
+        <!-- Se pueden ver todos los elementos en:
+         https://www.w3schools.com/html/html_blocks.asp-->
+    <p style="border:2px red solid">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab quae repellendus mollitia, </p> <!--  "p" es un elemento en block -->
+    <p style="border:2px red solid">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aliquid molestiae dignissimos exercitationem voluptatem. Corrupti magnam dolorem, vero, optio eius eveniet fuga quasi ullam distinctio atque est quidem quibusdam repellat.</p>
+    <a href="#" style="border:2px green solid">Link</a> <!-- "a" es un elemento in line-->
+    <a href="#" style="border:2px green solid">Link</a>
+    
+
+        <!-- Div, span, id and class -->
+    
+    <!-- 
+        Div es un elemento en bloque
+        Span es un elemento en linea
+        Ambos se usan para dividir contenido
+     -->
+     <style>
+        .card{
+             border: 1px solid rgb(128, 128, 128);
+             background: #f4f4f4;
+             padding: 20px;
+             margin-bottom: 10px;
+             }
+
+        .enhance {
+            color: yellow;
+            background-color: aqua;
+        }
+         
+     </style>
+    <div id="main-nav">
+        <h3>My website</h3>
+        <p>I'm learning</p>
+    </div>
+    <ul>
+        <li><a href="#">Main Page</a></li>
+        <li><a href="#">Abaut</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div id="about" class="card">
+        <h3>Abaut</h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt molestiae error veritatis enim quaerat dicta consectetur? Labore, <div class="enhance">perferendis! Mollitia </div> facilis rem provident ullam reprehenderit?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos necessitatibus impedit eum nesciunt deserunt ab eos atque, quod autem fugit a, officiis error dicta quibusdam reprehenderit obcaecati quisquam! Provident, placeat.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere impedit consectetur quibusdam sequi maxime natus eligendi magnam nam. <span class="enhance">Labore asperiores</span> quas modi itaque corporis accusamus facilis maxime. Blanditiis, magnam pariatur!
+        </p>
+    </div>
+    <div id="contact" class="card">
+        <h3>Contact me</h3>
+        <ul>
+            <li>Daniel Alcantara</li>
+            <li>Phone: 5541382421</li>
+            <li>Email: danidea1@gmail.com</li>
+        </ul>
+    </div>
+    <div id="footer">
+        <h3>
+            Daniel Alcantara
+        </h3>
+        <span>Copyright &copy; 2021</span>
+    </div>
+    <!-- 
+        *id es una identificacion única. No se repiten
+        *class se utiliza para identificar elementos de un mismo estilo. Se ppueden rapetir
+     -->
+
+
+        <!-- Entities -->
+    <h2>Entities</h2>
+     <!-- Non breaking space 
+        &nbsp;    
+    -->
+     <p>Hola, me llamo &nbsp;&nbsp;&nbsp;&nbsp; Esteban</p>
+    <!-- Menor/mayor que  (grater than , less than)-->
+    <p>5 &gt; 2</p>
+    <p>1 &lt; 5</p>
+    <!-- Copyright -->
+    <p>&copy;</p>
+    <p>&reg;</p>
+    <!-- Currency -->
+    <p>&cent;</p>
+    <p>&pound;</p>
+    <p>&yen;</p>
+    <p>&euro;</p>
+    
+    <p class="card">Hay más, visitarlos en <a href="https://www.w3schools.com/html/html_blocks.asp" target="_BLANK">w3School</a></p>
+
+    <div>
+        Click hero to <a href="semanticaHTML.html">Semantica</a>
+    </div>
+</body>
+</html>

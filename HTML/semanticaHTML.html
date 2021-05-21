@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Tags</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+  
+        ul {
+          padding: 0;
+          list-style: none;
+        }
+  
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          color: #333;
+          line-height: 1.4;
+        }
+  
+        #header {
+          margin-bottom: 15px;
+          background: #333;
+          color: #fff;
+          padding: 10px;
+        }
+  
+        #main {
+          float: left;
+          width: 69%;
+        }
+  
+        #sidebar {
+          float: right;
+          width: 29%;
+        }
+  
+        .clr {
+          clear: both;
+        }
+  
+        #footer {
+          background: #333;
+          color: #fff;
+          padding: 10px;
+        }
+  
+        .text-center {
+          display: block;
+          text-align: center;
+        }
+  
+        .card {
+          border: 1px solid #ddd;
+          background: #f4f4f4;
+          padding: 20px;
+          margin-bottom: 10px;
+        }
+      </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="header" class="card">
+        <h1>My Website</h1>
+        <p>Just another website</p>
+        <div>
+            Click hero to <a href="index.html">index</a>
+        </div>
+    </header>
+    <!-- Main content (left) -->
+    <main id="main">
+        <!-- welcome section -->
+        <section id="welcome" class="card">
+            <h2>Welcome to my website</h2>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ad provident iusto, laborum inventore distinctio aut 
+                debitis culpa delectus autem labore sapiente corporis aspernatur reiciendis at eveniet dignissimos molestias eaque.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti incidunt
+                error iure dolorum sed autem voluptatum, eaque eum odio quo est culpa! Voluptas optio fuga ut excepturi praesentium labore animi.
+                <a href="#" class="text-center">Click For more</a>
+            </p>
+        </section>
+        <!-- blog section -->
+        <section id="blog">
+            <h2>From our blog</h2>
+            <!-- Article one -->
+            <article class="article">
+                <h3>Article one</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium doloremque, consequatur excepturi corrupti incidunt laborum unde, quae ab nisi error dolor repudiandae cumque repellendus rem pariatur quis beatae dolorum accusantium?</p>
+            </article>
+            <!--article two  -->
+            <article class="article">
+                <h3>Article two</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quis vitae, blanditiis corrupti dolorem inventore maiores perspiciatis libero iste voluptatem laboriosam aperiam repellat est, maxime repellendus, molestiae sit natus aspernatur.</p>
+            </article>
+        </section>
+    </main>
+
+    <!-- Sidebar (right) -->
+    <aside class="card">
+        <h3>Navigation</h3>
+        <!-- nAVIGATION -->
+        <nav>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.google.com.mx/" target="_BLANK">Google</a></li>
+                <li><a href="html5_semantics_start.html" target="_BLANK">The beuty one</a></li>
+            </ul>
+        </nav> 
+        <h3>Contac me</h3>
+        <ul>
+            <li><strong>Addres: </strong>Mi casa xD</li>
+            <li><strong>Phone: </strong>5541380242</li>
+        </ul>
+    </aside>
+    <div class="clr"></div>
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="text-center">Copyright &copy; Daniel Alcantara. Todos los derechos reservados</p>
+    </footer>
+
+
+
+    <!--  
+    <div id="header">
+        <h1>My own WebPage</h1>
+        <div>
+            Click hero to <a href="index.html">index</a>
+        </div>
+        <p>
+            In this part of this mine webpage I goig to practice the semantics of HTML, but just with divs
+        </p>
+    </div>
+    <div id="section">
+        <p>This part of my page is the "section", the main part of the page, here it's the main information </p>
+        <div id="article">
+            <p>Segun lo que entendí en esta parte, llamada article, esta otra parte de la información principal, aunque no entendí buen que xdD</p>
+        </div>
+    </div>
+    <div id="aside">
+        <p>This is like a second part, no much important than the article, here can be a add or maybe other stuff</p>
+    </div>
+    <div id="footer">
+        <p>Regularmente en esta parte iría la información del contacto, o esas cosa, como el pie de la pagina</p>
+
+    </div>
+</body>
+ -->
+
+
+</html>
