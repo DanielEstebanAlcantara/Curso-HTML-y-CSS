@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Fonts</title>
     <style>
-        
+        /* Cambiar la fuente en todo el documento */
+        /* Google fonts: https://fonts.google.com/ 
+        esto se inserta en la parte de head de HTML
+        */
+        body {
+            font-family: 'Roboto', sans-serif ;
+            font-size: 25px;
+            line-height: 1.6em;
+        }
+
+        #Welcome p span {
+            font-weight: bold;
+
+        }
+
+        #about p span{
+            font-style: italic;
+        }
+
+
     </style>
 </head>
 <body>
-    <h1>FONTS :)</h1>
+    <!-- <h1>FONTS :)</h1> -->
     <div id="Welcome">
         <h2 id="title-one">Welcome</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A aspernatur deleniti voluptates libero quaerat molestias animi suscipit eligendi earum blanditiis tempora totam distinctio, esse iure commodi nobis incidunt cum odit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<span> A aspernatur deleniti voluptates libero quaerat</span> molestias animi suscipit eligendi earum blanditiis tempora totam distinctio, esse iure commodi nobis incidunt cum odit.</p>
     </div>
     <div id="about">
         <h2 class="Headind">About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui modi soluta, porro aliquid iusto corrupti consectetur similique quidem eligendi fuga. Velit nulla fugiat ipsam? Temporibus quisquam commodi fugit ipsum repellat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui modi soluta, porro <span>aliquid iusto corrupti consectetur similique</span> quidem eligendi fuga. Velit nulla fugiat ipsam? Temporibus quisquam commodi fugit ipsum repellat.</p>
     </div>
 </body>
 </html>
