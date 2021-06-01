@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000;
+}
+#logo_netflix{
+    background: #b1060f;
+    height: 250px;
+    width: 60px;
+    position: relative;
+}
+
+#logo_netflix::before{
+    background: #b1060f;
+    height: 250px;
+    width: 60px;
+    position: absolute;
+    content: '';
+    left: 90px;
+}
+
+#logo_netflix::after{
+    background: #000;
+    height: 20px;
+    width: 175px;
+    position: absolute;
+    content: '';
+    left: -15px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+
+#logo_netflix span{
+    position: absolute;
+    height: 250px;
+    width: 60px;
+    background: #e50913;
+    left: 46px;
+    transform: skew(20deg);
+    box-shadow: 0 0 10px -4px #222;
+}
+
