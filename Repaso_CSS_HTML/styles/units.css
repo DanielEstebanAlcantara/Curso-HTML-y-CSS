@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.pixels {
+  background-color: cadetblue;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  font-size: 16px;
+  border: thick rebeccapurple solid;
+}
+
+.ems {
+  background-color: cadetblue;
+  padding: 1.5em;
+  font-size: 1em;
+  border: thick rebeccapurple solid;
+}
+
+.em-child {
+  text-align: center;
+  background-color: salmon;
+  border: thick solid beige;
+  margin: 0.5em;
+  padding: 1em;
+  font-size: 2em;
+}

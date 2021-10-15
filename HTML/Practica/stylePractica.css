@@ -6,64 +6,105 @@
 }
 
 body{
+    
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    background-color: rgba(87, 87, 81, 0.76);
+    background-color: rgba(51, 71, 86, 0.76);
+}
+
+.container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
 }
 
         /* Header */
 header{
-    
+    background-color: rgb(8, 32, 50);
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    width: 100%;
 }
 
 #nombre{
-    float: left;
     font-size: 3rem;
-    display: inline;
+    margin: 0 auto;
+    text-align: center;
+    
 }
 
 #bienvenida{
     font-size: 1.7rem;
+    display: inline;
     float: left;
+    margin-top: -1rem;
+    /* Cambiar el color */
 
 }
 
 
-header a{
+ a{
     color: #fff;
     text-decoration: none;
 }
 
 #linksnav{
+    display: inline;
     float: right;
-    padding: 2rem;
+    margin-top: -1rem;
+    /* margin: 0.5rem; */
 }
 
-.linkHeader{
-    display: inline-block;
-    width: 10%;
-    margin: 10px 5px;
-    padding: 5px;
-    border-radius: 20px;
-    background: #000;
+.linksBtn{
+    display: inline;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    padding: 5px 0;
+    padding-right: 0;
+    border-radius: 15px;
     text-align: center;
+    background: rgb(255, 76, 41);
 
 }
 
-
-
+.linksBtn a{
+    font-size: 90%;
+    padding: 10px;
+}
 
 #Selfie{
-    float: right;
-    width: 100px;
-    height: 100px;
+    display: block;
+    width: 7%;
+    height: 7%;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 100px;
 }
 
 main{
     float: left;
-    height: 370px;
+    height: 23rem;
+    width: 85%;
     color: #fff;
-    text-align: justify;
+    background: rgb(51, 71, 86);
     padding: 20px ;
+    margin: 0 auto;
+}
+
+#introduccion{
+    width: 95%;
+
+}
+
+#intro{
+    margin: 2rem 1rem;
+    text-align: justify;
+}
+
+#inv{
+    position: absolute;
+    top: 32rem;
+    left: 50rem;
+    font-size: 1rem;
+    
 }
 
 .clr{
@@ -72,27 +113,24 @@ main{
 
 aside{
     float: right;
-    width: 12%;
-    background-color: #fff;
-    height: 370px;
-    font-weight: 1.6rem;
+    width: 15%;
+    height: 23rem;
+    background-color: rgb(10, 129, 171);
+    font-weight: 1rem;
+    text-align: center;
+    padding: 10px 20px;
 }
+
 
 aside h3{
-    margin-bottom: 15px;
-}
-
-#redes{
+    margin-bottom: 0.563;
     text-align: center;
-    padding: 20px;
 }
 
 #redes a{
     display: block;
-    float:right;
     color: #022c3c;
     text-decoration: none;
-    text-align: center;
 }
 
 
@@ -102,29 +140,35 @@ aside h3{
 
 .SocialMedia{
     text-align: center;
-    padding: 5px;
-    margin: auto;
-    margin: 10px 0;
+    margin: 10px auto;
+    width: 100%;
+    height: 16%;
 }
 
 
 /* Imagenes de socialMedia */
 .IMGSocialMedia{
     display: inline;
-    width: 30%;
-    height: 50%;
+    width: 25%;
+    height: 60%;
+    margin-top: 1.5rem;
+    margin-left: -1.7rem;
 }
 
+/* Pie de página */
 
 footer{
     padding: 20px;
     line-height: 1.6em;
-    border: solid #000 3px;
-    background-color: #022c3c;
+    background-color: rgb(8, 32, 50);;
     color: #fff;
 }
 footer li{
     text-decoration: none;
     list-style: none;
 
+}
+
+footer #Derechos p{
+    text-align: center;
 }
