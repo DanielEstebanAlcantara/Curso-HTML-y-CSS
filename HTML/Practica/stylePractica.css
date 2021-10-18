@@ -100,10 +100,7 @@ main{
 }
 
 #inv{
-    position: absolute;
-    top: 32rem;
-    left: 50rem;
-    font-size: 1rem;
+    margin-top: 18% ;
     
 }
 
@@ -115,7 +112,7 @@ aside{
     float: right;
     width: 15%;
     height: 23rem;
-    background-color: rgb(10, 129, 171);
+    background-color: rgb(49, 107, 131);
     font-weight: 1rem;
     text-align: center;
     padding: 10px 20px;
