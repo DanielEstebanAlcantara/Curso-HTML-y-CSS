@@ -1,0 +1,104 @@
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-sedans: rgb();
+  --color-suvs: rgb(0, 145, 124);
+  --color-luxury: rgb(2, 89, 85);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(255, 255, 255);
+}
+
+.section-cards {
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  width: 64vw;
+  height: 65vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+}
+
+.cards {
+  height: 100%;
+  width: 33.33%;
+  padding: 2rem;
+  font-size: 97%;
+  color: rgb(255, 255, 255);
+  overflow: auto;
+}
+
+.cards a {
+  text-decoration: none;
+}
+.cards h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+.card-text {
+  text-align: left;
+}
+
+#card1 {
+  float: left;
+  background-color: var(--color-sedans);
+}
+#card1 a {
+  color: var(--color-sedans);
+}
+#card2 {
+  background-color: var(--color-suvs);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#card2 a {
+  color: var(--color-suvs);
+}
+
+#card3 {
+  float: right;
+  background-color: var(--color-luxury);
+}
+
+#card3 a {
+  color: var(--color-luxury);
+}
+
+.btn {
+  margin-top: 3.7em;
+  border-radius: 0.5em;
+  width: 60%;
+  height: 10%;
+  padding: 0.7em;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(81, 94, 99);
+  font-size: 0.688em;
+  text-align: center;
+  padding: 0.3rem;
+  color: rgb(255, 255, 255);
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 41%, 85%);
+}
