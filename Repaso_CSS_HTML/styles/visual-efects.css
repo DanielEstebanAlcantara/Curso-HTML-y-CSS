@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.box {
+  border: thick solid #000;
+  margin: 0 auto;
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.shadows {
+  color: #155;
+  font-size: 2rem;
+  /* box-shadow: mov-x mov-y blur-radius spread-blur color insert/outset; */
+  box-shadow: 1rem 1rem 1rem 1rem;
+  box-shadow: -1rem -1rem 1rem 1rem;
+  box-shadow: 1rem 1rem 1rem 1rem #0005;
+  box-shadow: 1rem 1rem 1rem 1rem #f00 inset; /*Valor por defecto es outset*/
+  box-shadow: 1rem 1rem 2rem 0.5rem #0007;
+  /* Text shadow */
+  /* text-shadow: mov-x mov-y blur-radius color; */
+  text-shadow: -1rem -1rem 0.7rem hotpink;
+}
+
+.shadows-multiple {
+  box-shadow: 1rem 1rem 1rem 1rem #0005, 1rem 1rem 1rem 1rem #f00 inset,
+    -0.5rem -0.5rem 0.5rem 2rem hotpink;
+}
+.drop-shadow {
+  width: 37.5rem;
+  height: auto;
+}
+.drop-shadow img {
+  /* filter: drop-shadow(mov-x mov-y blur-radius color); */
+  max-width: 100%;
+  box-shadow: 1rem 1rem 1rem 1rem #f00;
+  filter: drop-shadow(1rem 1rem 1rem steelblue);
+}
