@@ -1,0 +1,129 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+:root {
+    --lighter-orange: rgb(250,238,226);
+    --purple: rgb(118,81,220);
+    --lighter-purple: rgb(220,209,252);
+    --orange: rgb(255,204,105);
+    --white: rgb(255, 255, 255);
+}
+
+.chalet {
+    font-family: "Chalet", sans-serif;
+}
+
+.grid-sections{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+    'leftSection  rightSection'
+    'leftSection bottomSection';
+    width: 90%;
+    height: 95vh;
+    margin-left: auto;
+        margin-right: auto;
+    font-family: 'Nunito';
+}
+.left-section{
+    display: flex;
+    flex-flow: column nowrap;
+    grid-area: leftSection;
+    
+}
+.right-section{
+    display: grid;
+    grid-area: rightSection;
+    grid-template-columns: 35% 35% 30%;
+        grid-template-rows: 60% 40%;
+        grid-template-areas:
+                'topRight topRight  topLeft'
+                'bottomLeft bottomRight topLeft ';
+
+}
+
+.bottom-section{
+    grid-area: bottomSection;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+
+.global-section{ 
+    border: thin solid green;
+}
+
+.stronger-purple-box{
+    grid-area: topRight;
+}
+.whithe-box{
+    grid-area: bottomLeft;
+    
+    background-color: var(--white);
+}
+.second-orange-box{
+    grid-area: bottomRight;
+}
+.lighter-purple-box{
+    grid-area: topLeft;
+}
+.right-purple-box{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.content-box{
+    margin: 1vh;
+    padding: 1vh;
+    border: thin solid red;
+    overflow: hidden;
+}
+
+
+
+.vertical-box{
+    width: 90%;
+    height: 50%;
+}
+
+
+.lighter-orange-box{
+    background-color: var(--lighter-orange);
+    text-align: center;
+}
+
+.orange-box, .second-orange-box{
+    background-color: var(--orange);
+}
+
+.stronger-purple-box, .right-purple-box{
+    background-color: var(--purple);
+}
+
+
+.lighter-purple-box{
+    background-color: var(--lighter-purple);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
